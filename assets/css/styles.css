@@ -70,6 +70,7 @@ header {
     z-index: 100;
 }
 
+
 .logo a img {
     height: 55px;
     width: 55px;
@@ -112,6 +113,12 @@ nav a:hover {
     cursor: pointer;
     font: inherit;
     padding: 5px 10px;
+
+    color: var(--text-primary);
+    border-radius: var(--radius-sm);
+    transition: var(--transition);
+    font-weight: bold;
+    font-size: 20px;
     
 }
 
