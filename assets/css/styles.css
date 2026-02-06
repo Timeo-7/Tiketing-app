@@ -280,7 +280,8 @@ h2 {
 }
 
 .projects-fast-access,
-.tickets-fast-access {
+.tickets-fast-access,
+.clients-fast-access {
     background-color: var(--bg-secondary);
     display: flex;
     justify-content: space-between;
