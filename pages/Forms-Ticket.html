@@ -42,24 +42,24 @@
         </div>
 
         <div>
-            <form action="./Tickets-List.html" method="GET">
+            <form id="submitform" action="" method="POST">
                 <label for="ticket-title">Ticket Title:</label>
-                <input type="text" id="ticket-title" name="ticket-title" required>
+                <input type="text" id="ticket-title" name="ticket-title">
                 <br>
                 <label for="client-name">Client Name:</label>
-                <input type="text" id="client-name" name="client-name" required>
+                <input type="text" id="client-name" name="client-name">
                 <br>
                 <label for="description">Description:</label>
-                <textarea id="description" name="description" required></textarea>
+                <textarea id="description" name="description"></textarea>
                 <br>
                 <label for="projet">Project:</label>
-                <select type="text" id="projet" name="projet" required>
+                <select type="text" id="projet" name="projet">
                     <option value="project1">No Project</option>
                     <option value="project1">Project 1</option>
                     <option value="project2">Project 2</option>
                 </select>
                 <label for="colaborators">Colaborators:</label>
-                <input type="text" id="colaborators" name="colaborators" required></input>
+                <input type="text" id="colaborators" name="colaborators"></input>
 
                 <label for="accept"> Facturable : <input type="checkbox" id="accept" name="accept"> </label>
                     
@@ -70,5 +70,9 @@
 
 
     </section>
+
+    <script src="../JS/Forms.js"></script>
 </body>
+
+
 </html>
