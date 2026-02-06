@@ -74,6 +74,7 @@ header {
 .logo a img {
     height: 55px;
     width: 55px;
+    border-radius: 100px;
     object-fit: contain;
     transition: var(--transition);
 }
