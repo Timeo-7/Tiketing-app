@@ -508,7 +508,21 @@ h2 {
     box-shadow: var(--shadow-md);
 }
 
+.error-text{
+    background-color: var(--bg-secondary);
+    padding: 10px;
+    border-radius: var(--radius-md);
+    border: 2px solid var(--border-light);
+    box-shadow: var(--shadow-md);
+    color: red;
+    margin-bottom: 10px;
+}
+
 /* ==================== Forms ==================== */
+.titanic{
+    display: none;
+}
+
 form {
     background-color: var(--bg-secondary);
     padding: 40px;
@@ -542,7 +556,7 @@ form input[type="file"] {
     border: 2px solid var(--border-light);
     border-radius: var(--radius-sm);
     transition: var(--transition);
-    margin-bottom: 24px;
+    margin-bottom: 10px;
 }
 
 form input[type="text"]:focus,

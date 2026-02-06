@@ -24,7 +24,7 @@
                 <a class="Drop-button">☰</a>
                 <div class="Drop-content">
                     <a href="#">Profile</a>
-                    <a href="#">Settings</a>
+                    <a href="../pages/Settings.html">Settings</a>
                     <a href="../index.html">Logout</a>
                 </div>   
                 
@@ -42,12 +42,14 @@
         </div>
 
         <div>
-            <form id="submitform" action="" method="POST">
+            <form id="submitform_ticket" action="" method="POST">
                 <label for="ticket-title">Ticket Title:</label>
                 <input type="text" id="ticket-title" name="ticket-title">
+                <div id="title_error" class="error-text titanic">Le titre est obligatoire.</div>
                 <br>
-                <label for="client-name">Client Name:</label>
-                <input type="text" id="client-name" name="client-name">
+                <label for="ticket-client">Client Name:</label>
+                <input type="text" id="ticket-client" name="ticket-client">
+                <div id="client_error" class="error-text titanic">Le client est obligatoire.</div>
                 <br>
                 <label for="description">Description:</label>
                 <textarea id="description" name="description"></textarea>
@@ -71,7 +73,7 @@
 
     </section>
 
-    <script src="../JS/Forms.js"></script>
+    <script src="../JS/Ticket-Forms.js"></script>
 </body>
 
 
