@@ -21,20 +21,84 @@
             <a href="./Clients-List.html">Clients</a>
             
             <div class="Profile-drop">
-                <a class="Drop-button">☰</a>
+                <button class="Drop-button">☰</button>
                 <div class="Drop-content">
                     <a href="../pages/Profil.html">Profile</a>
                     <a href="../pages/Settings.html">Settings</a>
                     <a href="../index.html">Logout</a>
                 </div>   
-                
             </div>
         </nav>
     </header>
 
 
-    <section>
+    <section class="Profile">
+        <div class="Profil-Picture">
+            <img id="Profil-image" src="../assets/img/Profile.png" alt="Logo de moi hyper bg" >
+            <div><h2 id="Profil Name">Maxence Gautier-Grall</h2></div>
+            <div id="Profil-Informations">
+                <p>Email : XXXXXXX@XXXXXXX</p>
+                <p>Number : +33 (0)7 95 86 42 48</p>
+                <p>Account type : Client</p>
+            </div>
+        </div>
+        <div id="Profile-Access">
+
         
+            <div class="Dashboard-Stats">
+                <div class="Fast-Access">
+                    <h2>Fast-Access</h2>
+
+                    <div>
+                        <div class="access-list">
+                            <div class="cadre">   
+                                <a href="./Projects-List.html">Projects</a>
+
+                                <a class="projects-fast-access" href="./Project.html" >
+                                    <p>Project 1</p>
+                                    <p>25x🧾</p>
+                                </a>
+                                <a class="projects-fast-access" href="./Project.html" >
+                                    <p>Project 2</p>
+                                    <p>36x🧾</p>
+                                </a>
+
+                            </div>
+                            
+                            <div class="cadre">   
+                                <a href="./Tickets-List.html">Tickets</a>
+
+                                <a class="tickets-fast-access" href="./Tickets.html" >
+                                    <p>Tickets 1</p>
+                                    <p>client 1</p>
+                                    
+                                    <ul>
+                                        <li>2x🚹</li>
+                                        <li>⏳</li>
+                                        <li>🪙</li>
+                                        <li>28/01/2026 12:06</li>
+                                    </ul>
+                                </a>
+
+                                <a class="tickets-fast-access" href="./Tickets.html" >
+                                    <p>Tickets 2</p>
+                                    <p>client 2</p>
+                                    
+                                    <ul>
+                                        <li>0x🚹</li>
+                                        <li>❌</li>
+                                        <li>27/01/2026 14:29</li>
+                                    </ul>
+                                </a>
+
+                        </div>
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <script src="../JS/Header.js"></script>
 </body>
 </html>

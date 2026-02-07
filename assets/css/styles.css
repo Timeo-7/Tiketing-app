@@ -124,8 +124,7 @@ nav a:hover {
 }
 
 .Drop-content {
-    display: none; /* masqué par défaut */
-    position: absolute;
+    
     background-color: #f9f9f9;
     min-width: 120px;
     box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
@@ -142,11 +141,6 @@ nav a:hover {
 
 .Drop-content a:hover {
     background-color: #f1f1f1;
-}
-
-/* Affiche le menu au survol du conteneur global */
-.Profile-drop:hover .Drop-content {
-    display: block;
 }
 
 /* Optionnel : bouton en gras au survol */
@@ -518,6 +512,64 @@ h2 {
     margin-bottom: 10px;
 }
 
+/* =================== Profile =================== */
+
+.Profile{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+
+    
+
+}
+
+.Profil-Picture{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 800px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 30px;
+
+    padding: 20px;
+
+    background-color: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    border: 2px solid var(--border-light);
+    box-shadow: var(--shadow-md);
+    
+}
+
+#Profil-image{
+    height: 250px;
+    width: 250px;
+
+    
+    
+    margin: 30px;
+    border-radius: 200px;
+    object-fit: cover;
+    background-size: cover;
+}
+
+#Profil-Informations p{
+    background-color: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    border: 2px solid var(--border-light);
+    box-shadow: var(--shadow-md);
+    padding: 10px;
+
+    margin-bottom: 20px;
+}
+
+#Profile-Access{
+    display: inline-block;
+    width: 100%;
+}
+
+
 /* ==================== Forms ==================== */
 .titanic{
     display: none;
@@ -668,5 +720,8 @@ button:disabled {
     .Edit-button,
     .Supression-button {
         width: 100%;
+    }
+    .Profile{
+        flex-direction: column;
     }
 }
