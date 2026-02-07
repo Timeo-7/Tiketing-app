@@ -15,7 +15,7 @@ function chek_connexion_success() {
     } 
     else if(!/.+@+./.test(MAIL_INPUT.value)){
         EMAIL_ERROR.classList.remove("titanic");
-        console.log("Pas de @");
+        console.log("Pas de @ je crois");
         res ++;
     }
     else {
