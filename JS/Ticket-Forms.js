@@ -56,6 +56,14 @@ SUBMIT_TICKET.addEventListener("submit", function(event) {
         console.log("title: " + TITLE_INPUT.value);
         console.log("Client: " + CLIENT_INPUT.value);
 
+        const VALID = document.querySelector(".ValidForms");
+
+            VALID.classList.toggle("titanic");
+
+            setTimeout(function() {
+                VALID.classList.toggle("titanic");
+            }, 3000);
+
 
         TITLE_INPUT.value = "";
         CLIENT_INPUT.value = "";

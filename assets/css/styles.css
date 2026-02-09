@@ -191,6 +191,26 @@ h2 {
     transform: translateY(0);
 }
 
+.ValidForms{
+    
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: green;
+    color: white;
+    height: 100px;
+    width: 300px;
+    border-radius: 80px;
+
+    font-size: 25px;
+
+}
+
 /* ==================== Dashboard ==================== */
 .Dashboard-Stats {
     list-style-type: none;
