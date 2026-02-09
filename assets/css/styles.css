@@ -138,6 +138,7 @@ nav a:hover {
     padding: 8px 12px;
     text-decoration: none;
     display: block;
+    z-index: 100;
 }
 
 .Drop-content a:hover {
@@ -572,6 +573,92 @@ h2 {
     width: 100%;
 }
 
+/* =================== Settings =================== */
+
+.SettingsPage{
+    display: flex;
+    justify-content: center;
+}
+
+.ClassicSettings, .DashBoardSettings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+
+
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-secondary);
+    border-bottom: 2px solid var(--border-light);
+    padding: 8px 32px;
+    box-shadow: var(--shadow-sm);
+
+    margin: 20px;
+}
+
+.Theme, .LangueSettings{
+     display: flex;
+    gap: 50px;
+    font-weight: 500;
+    padding: 8px 16px;
+    
+}
+
+.ThemeSwitch, .FastAccessSwitch{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.ThemeSwitch input, .FastAccessSwitch input {
+    display: none;
+}
+
+/* Le fond du switch */
+.ThemeSwitch .slider, .FastAccessSwitch .slider {
+    position: relative;
+    width: 48px;
+    height: 26px;
+    background-color: var(--border-medium);
+    border-radius: 50px;
+    transition: var(--transition);
+}
+
+/* Le rond */
+.ThemeSwitch .slider::before, .FastAccessSwitch .slider::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    top: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+}
+
+/* Activé */
+.ThemeSwitch input:checked + .slider, .FastAccessSwitch input:checked + .slider {
+    background-color: var(--accent-primary);
+}
+
+.ThemeSwitch input:checked + .slider::before, .FastAccessSwitch input:checked + .slider::before {
+    transform: translateX(22px);
+}
+
+.switch-label {
+    font-weight: 500;
+}
+
+
+    
+
+
 
 /* ==================== Forms ==================== */
 .titanic{
@@ -678,6 +765,22 @@ form .Submit-button {
 }
 
 
+/* ==================== Select ==================== */
+
+select {
+    appearance: none;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    border: 2px solid var(--border-light);
+    border-radius: var(--radius-sm);
+    padding: 12px 44px 12px 16px;
+    font-size: 16px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: var(--transition);
+    text-align: center;
+    align-items: center;
+}
 
 
 
@@ -747,4 +850,159 @@ button:disabled {
     .Profile{
         flex-direction: column;
     }
+
+    .SettingsPage {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ClassicSettings,
+    .DashBoardSettings {
+        width: 100%;
+        max-width: 500px;
+        margin: 12px;
+        padding: 16px 20px;
+    }
+
+    .Theme,
+    .LangueSettings {
+        width: 100%;
+        justify-content: space-between;
+        gap: 20px;
+    }
+}
+
+
+
+/* ==================== Responsive mobile renforcé ==================== */
+
+/* Très petits écrans */
+@media (max-width: 480px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    header {
+        padding: 12px;
+    }
+
+    .logo a img {
+        height: 45px;
+        width: 45px;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .Dashboard-Stats,
+    .fast-Access,
+    .Tickets-List,
+    .Projects-List,
+    .Forms-Cadre {
+        margin: 16px;
+        padding: 16px;
+    }
+
+    .cadre {
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    .projects-fast-access,
+    .tickets-fast-access,
+    .clients-fast-access {
+        min-width: unset;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .tickets-fast-access ul {
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+    }
+
+    .Table-ticket {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .Ticket-cadre p {
+        margin-left: 0;
+    }
+
+    .Profile {
+        gap: 20px;
+    }
+
+    .Profil-Picture {
+        margin: 20px;
+        width: calc(100% - 40px);
+        height: auto;
+    }
+
+    #Profil-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    form {
+        padding: 24px;
+        margin: 16px;
+    }
+
+    .ValidForms {
+        width: calc(100% - 40px);
+        right: 20px;
+        left: 20px;
+        font-size: 20px;
+        height: 80px;
+    }
+
+    @media (max-width: 480px) {
+
+    .SettingsPage {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0;
+        margin: 0;
+    }
+
+    .ClassicSettings,
+    .DashBoardSettings {
+        width: 100%;
+        margin: 10px 0;
+        padding: 16px;
+        border-radius: 0;
+    }
+
+    .Theme,
+    .LangueSettings {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 8px 0;
+    }
+
+    .Theme h3,
+    .LangueSettings h3 {
+        font-size: 16px;
+    }
+
+    .ThemeSwitch,
+    .FastAccessSwitch {
+        gap: 8px;
+    }
+}
+
 }
